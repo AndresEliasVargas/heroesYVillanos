@@ -1,0 +1,42 @@
+{
+	"squadName": "Super Villains Team",
+	"homeTown": "Gothic City",
+	"formed": 2017,
+	"secretBase": "The Shadow Gallery",
+	"active": true,
+	"members": [
+		{
+			"name": "Brainiac",
+			"age": 100000,
+			"secretIdentity": "Will Sooms",
+			"powers": [
+				"Travels the multiverse",
+				"Techno-organic being",
+				"Extinction of countless planets"
+			],
+			"image":"../imgs/villainIcons/icon1.png"
+		},
+		{
+			"name": "Harley Quinn",
+			"age": 27,
+			"secretIdentity": "Harley Quinn",
+			"powers": [
+				"Weapons expert",
+				"Damage resistance",
+				"Crazy to the bone"
+			],
+			"image":"../imgs/villainIcons/icon2.png"
+		},
+		{
+			"name": "Sandman",
+			"age": 33,
+			"secretIdentity": "Unknown",
+			"powers": [
+				"Transform to sand",
+				"Controls sand",
+				"Inmortality"
+			],
+			"image":"../imgs/villainIcons/icon5.png"
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"squadName": "Super Hero Squad",
+	"homeTown": "Metro City",
+	"formed": 2016,
+	"secretBase": "Super tower",
+	"active": true,
+	"members": [
+		{
+			"name": "Molecule Man",
+			"age": 29,
+			"secretIdentity": "Dan Jukes",
+			"powers": [
+				"Radiation resistance",
+				"Turning tiny",
+				"Radiation blast"
+			],
+			"image": "../imgs/heroeIcons/icon3.png"
+		},
+		{
+			"name": "Madame Uppercut",
+			"age": 39,
+			"secretIdentity": "Jane Wilson",
+			"powers": [
+				"Million tonne punch",
+				"Damage resistance",
+				"Superhuman reflexes"
+			],
+			"image": "../imgs/heroeIcons/icon4.png"
+		},
+		{
+			"name": "Eternal Flame",
+			"age": 1000000,
+			"secretIdentity": "Unknown",
+			"powers": [
+				"Immortality",
+				"Heat Immunity",
+				"Inferno",
+				"Teleportation",
+				"Interdimensional travel"
+			],
+			"image": "../imgs/heroeIcons/icon7.png"
+		},
+		{
+			"name": "Super Moco",
+			"age": 22,
+			"secretIdentity": "Esteban Padilla",
+			"powers": [
+				"Tirar Moco"
+			],
+			"image": "../imgs/heroeIcons/icon8.png"
+		},
+		{
+			"name": "Super Reflujo",
+			"age": 22,
+			"secretIdentity": "Kaleen",
+			"powers": [
+				"Tirar Flujo"
+			],
+			"image": "../imgs/heroeIcons/icon9.png"
+		},
+		{
+			"name": "Spider Boy",
+			"age": 45,
+			"secretIdentity": "Juan Perez",
+			"powers": [
+				"unknown"
+			],
+			"image": "../imgs/heroeIcons/icon9.png"
+		}
+	]
+}
