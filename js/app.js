@@ -58,10 +58,76 @@ const getVillainsCallBack = e => {
 
 const completeLoadUI = () => {
     if (isGetHeroesComplete && isGetVillainsComplete) {
-        //TODO Load UI
+        const main = document.querySelector('#principal');
+
+        //Heroes vars
+        const section = document.createElement('section');
+        const titleHeroes = document.createElement('h2');
+        const secretBaseH = document.createElement('p');
+        const homeTownH = document.createElement('p');
+        const activeH = document.createElement('p');
+        const membersH = heroes.members;
+
+        //Villains vars
+        const section2 = document.createElement('section');
+        const titleVillains = document.createElement('h2');
+        const secretBaseV = document.createElement('p');
+        const homeTownV = document.createElement('p');
+        const activeV = document.createElement('p');
+
+        //Creating section
+        section.setAttribute('id', 'left');
+        section.classList.add('col-6');
+        section2.setAttribute('id', 'right');
+        section2.classList.add('col-6');
+
+        //Add sections in document
+        main.appendChild(section);
+        main.appendChild(section2);
+
+        //Create titles and Squad information
+        titleHeroes.setAttribute('id', 'titleHeroes');
+        titleHeroes.classList.add('text-center');
+        titleHeroes.innerHTML = heroes.squadName;
+
+        titleVillains.setAttribute('id', 'titleVillains');
+        titleVillains.classList.add('text-center');
+        titleVillains.innerHTML = villains.squadName;
+
+        //Create Heroes secretBase, homeTown, active
+        secretBaseH.classList.add('font-italic', 'text-center');
+        secretBaseH.innerHTML = heroes.secretBase;
+        homeTownH.classList.add('ml-5', 'pl-5');
+        homeTownH.innerHTML = '<b>Home Town </b>' + heroes.homeTown;
+        activeH.classList.add('ml-5', 'pl-5');
+        activeH.innerHTML = '<b>Active </b>' + heroes.active;
+
+        //Create Villains secretBase, homeTown, active
+        secretBaseV.classList.add('font-italic', 'text-center');
+        secretBaseV.innerHTML = villains.secretBase;
+        homeTownV.classList.add('ml-5', 'pl-5');
+        homeTownV.innerHTML = '<b>Home Town </b>' + villains.homeTown;
+        activeV.classList.add('ml-5', 'pl-5');
+        activeV.innerHTML = '<b>Active </b>' + heroes.active;
+
+        //Create Heroes dinamic cards - preguntar como hacer esto a kevin
+        for(let i = 0; i < membersH.lenght; i++){
+            console.log('hola mundo');
+        };
+
+
+        //Create villains dinamic cards
+
+
+        //Append all Squad data
+        section.append(titleHeroes, secretBaseH, homeTownH, activeH);
+        section2.append(titleVillains, secretBaseV, homeTownV, activeV);
+
+
         console.log(heroes);
         console.log(villains);
-    }
+    };
+
 };
 
 getHeroes();
