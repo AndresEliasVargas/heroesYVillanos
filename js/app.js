@@ -77,6 +77,10 @@ const completeLoadUI = () => {
         const secretBaseV = document.createElement('p');
         const homeTownV = document.createElement('p');
         const activeV = document.createElement('p');
+        const divRowV = document.createElement('div');
+        const divColV = document.createElement('div');
+        const col_3_leftV = document.createElement('div');
+        const col_3_rightV = document.createElement('div');
 
         //Creating section
         section.setAttribute('id', 'left');
@@ -106,7 +110,7 @@ const completeLoadUI = () => {
         activeH.innerHTML = '<b>Active </b>' + heroes.active;
         divRow.classList.add('row');
         col_3_left.classList.add('col-md-3');
-        divCol.classList.add('col-12 col-md-6');
+        divCol.classList.add('col-12', 'col-md-6');
         col_3_right.classList.add('col-md-3');
 
         //Create Villains secretBase, homeTown, active
@@ -116,36 +120,41 @@ const completeLoadUI = () => {
         homeTownV.innerHTML = '<b>Home Town </b>' + villains.homeTown;
         activeV.classList.add('ml-5', 'pl-5');
         activeV.innerHTML = '<b>Active </b>' + heroes.active;
+        divRowV.classList.add('row');
+        col_3_leftV.classList.add('col-md-3');
+        divColV.classList.add('col-12', 'col-md-6');
+        col_3_rightV.classList.add('col-md-3');
 
         //Append all Squad data
         section.append(titleHeroes, secretBaseH, homeTownH, activeH, divRow);
         divRow.append(col_3_left, divCol, col_3_right);
-        section2.append(titleVillains, secretBaseV, homeTownV, activeV);
+        section2.append(titleVillains, secretBaseV, homeTownV, activeV, divRowV);
+        divRowV.append(col_3_leftV, divColV, col_3_rightV);
 
         //Create Heroes dinamic cards
         heroes.members.map(memberData => {
-            const cardH = document.createElement('div');
-            const imageH = document.createElement('img');
-            const cardBodyH = document.createElement('div');
-            const titleH = document.createElement('h5');
-            const informationH = document.createElement('div');
+            const card = document.createElement('div');
+            const image = document.createElement('img');
+            const cardBody = document.createElement('div');
+            const title = document.createElement('h5');
+            const information = document.createElement('div');
             const ul = document.createElement('ul');
             const liTitle = document.createElement('li');
             //console.log(memberData);
 
-            cardH.classList.add('card', 'mb-3');
+            card.classList.add('card', 'mb-3');
 
-            imageH.setAttribute('alt', 'foto_heroe');
-            imageH.setAttribute('src', memberData.image);
-            imageH.setAttribute('class', 'card-img-top');
+            image.setAttribute('alt', 'foto_heroe');
+            image.setAttribute('src', memberData.image);
+            image.setAttribute('class', 'card-img-top');
 
-            cardBodyH.classList.add('card-body');
+            cardBody.classList.add('card-body');
 
-            titleH.classList.add('card-title', 'text-center');
-            titleH.innerHTML = memberData.name;
+            title.classList.add('card-title', 'text-center');
+            title.innerHTML = memberData.name;
 
-            informationH.classList.add('card-text');
-            informationH.innerHTML = '<p><strong>Secret Identity:</strong> '
+            information.classList.add('card-text');
+            information.innerHTML = '<p><strong>Secret Identity:</strong> '
                                      + memberData.secretIdentity +
                                      '</p><p><strong>Age:</strong> '
                                      + memberData.age +
@@ -153,9 +162,9 @@ const completeLoadUI = () => {
 
             liTitle.innerHTML = '<strong>Powers</strong>';
 
-            divCol.append(cardH);
-            cardH.append(imageH, cardBodyH);
-            cardBodyH.append(titleH, informationH, ul);
+            divCol.append(card);
+            card.append(image, cardBody);
+            cardBody.append(title, information, ul);
             ul.append(liTitle);
 
             memberData.powers.map(memberPower => {
@@ -168,11 +177,49 @@ const completeLoadUI = () => {
         });
 
         //Create villains dinamic cards
+        villains.members.map(memberData => {
+            const card = document.createElement('div');
+            const image = document.createElement('img');
+            const cardBody = document.createElement('div');
+            const title = document.createElement('h5');
+            const information = document.createElement('div');
+            const ul = document.createElement('ul');
+            const liTitle = document.createElement('li');
+            //console.log(memberData);
 
+            card.classList.add('card', 'mb-3');
 
+            image.setAttribute('alt', 'foto_heroe');
+            image.setAttribute('src', memberData.image);
+            image.setAttribute('class', 'card-img-top');
 
+            cardBody.classList.add('card-body');
 
+            title.classList.add('card-title', 'text-center');
+            title.innerHTML = memberData.name;
 
+            information.classList.add('card-text');
+            information.innerHTML = '<p><strong>Secret Identity:</strong> '
+                                     + memberData.secretIdentity +
+                                     '</p><p><strong>Age:</strong> '
+                                     + memberData.age +
+                                     '</p>';
+
+            liTitle.innerHTML = '<strong>Powers</strong>';
+
+            divColV.append(card);
+            card.append(image, cardBody);
+            cardBody.append(title, information, ul);
+            ul.append(liTitle);
+
+            memberData.powers.map(memberPower => {
+                //console.log(memberPowers);
+                const li = document.createElement('li');
+                li.innerHTML = memberPower;
+
+                ul.append(li);
+            });
+        });
         //console.log(heroes);
         //console.log(villains);
     };
