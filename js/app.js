@@ -104,9 +104,9 @@ const completeLoadUI = () => {
         //Create Heroes secretBase, homeTown, active
         secretBaseH.classList.add('font-italic', 'text-center');
         secretBaseH.innerHTML = heroes.secretBase;
-        homeTownH.classList.add('ml-5', 'pl-5');
+        homeTownH.classList.add('text-center');
         homeTownH.innerHTML = '<b>Home Town </b>' + heroes.homeTown;
-        activeH.classList.add('ml-5', 'pl-5');
+        activeH.classList.add('text-center');
         activeH.innerHTML = '<b>Active </b>' + heroes.active;
         divRow.classList.add('row');
         col_3_left.classList.add('col-md-3');
@@ -116,9 +116,9 @@ const completeLoadUI = () => {
         //Create Villains secretBase, homeTown, active
         secretBaseV.classList.add('font-italic', 'text-center');
         secretBaseV.innerHTML = villains.secretBase;
-        homeTownV.classList.add('ml-5', 'pl-5');
+        homeTownV.classList.add('text-center');
         homeTownV.innerHTML = '<b>Home Town </b>' + villains.homeTown;
-        activeV.classList.add('ml-5', 'pl-5');
+        activeV.classList.add('text-center');
         activeV.innerHTML = '<b>Active </b>' + heroes.active;
         divRowV.classList.add('row');
         col_3_leftV.classList.add('col-md-3');
