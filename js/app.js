@@ -66,7 +66,10 @@ const completeLoadUI = () => {
         const secretBaseH = document.createElement('p');
         const homeTownH = document.createElement('p');
         const activeH = document.createElement('p');
-        const membersH = heroes.members;
+        const divRow = document.createElement('div');
+        const divCol = document.createElement('div');
+        const col_3_left = document.createElement('div');
+        const col_3_right = document.createElement('div');
 
         //Villains vars
         const section2 = document.createElement('section');
@@ -101,6 +104,10 @@ const completeLoadUI = () => {
         homeTownH.innerHTML = '<b>Home Town </b>' + heroes.homeTown;
         activeH.classList.add('ml-5', 'pl-5');
         activeH.innerHTML = '<b>Active </b>' + heroes.active;
+        divRow.classList.add('row');
+        col_3_left.classList.add('col-md-3');
+        divCol.classList.add('col-12 col-md-6');
+        col_3_right.classList.add('col-md-3');
 
         //Create Villains secretBase, homeTown, active
         secretBaseV.classList.add('font-italic', 'text-center');
@@ -110,22 +117,64 @@ const completeLoadUI = () => {
         activeV.classList.add('ml-5', 'pl-5');
         activeV.innerHTML = '<b>Active </b>' + heroes.active;
 
-        //Create Heroes dinamic cards - preguntar como hacer esto a kevin
-        for(let i = 0; i < membersH.lenght; i++){
-            console.log('hola mundo');
-        };
+        //Append all Squad data
+        section.append(titleHeroes, secretBaseH, homeTownH, activeH, divRow);
+        divRow.append(col_3_left, divCol, col_3_right);
+        section2.append(titleVillains, secretBaseV, homeTownV, activeV);
 
+        //Create Heroes dinamic cards
+        heroes.members.map(memberData => {
+            const cardH = document.createElement('div');
+            const imageH = document.createElement('img');
+            const cardBodyH = document.createElement('div');
+            const titleH = document.createElement('h5');
+            const informationH = document.createElement('div');
+            const ul = document.createElement('ul');
+            const liTitle = document.createElement('li');
+            //console.log(memberData);
+
+            cardH.classList.add('card', 'mb-3');
+
+            imageH.setAttribute('alt', 'foto_heroe');
+            imageH.setAttribute('src', memberData.image);
+            imageH.setAttribute('class', 'card-img-top');
+
+            cardBodyH.classList.add('card-body');
+
+            titleH.classList.add('card-title', 'text-center');
+            titleH.innerHTML = memberData.name;
+
+            informationH.classList.add('card-text');
+            informationH.innerHTML = '<p><strong>Secret Identity:</strong> '
+                                     + memberData.secretIdentity +
+                                     '</p><p><strong>Age:</strong> '
+                                     + memberData.age +
+                                     '</p>';
+
+            liTitle.innerHTML = '<strong>Powers</strong>';
+
+            divCol.append(cardH);
+            cardH.append(imageH, cardBodyH);
+            cardBodyH.append(titleH, informationH, ul);
+            ul.append(liTitle);
+
+            memberData.powers.map(memberPower => {
+                //console.log(memberPowers);
+                const li = document.createElement('li');
+                li.innerHTML = memberPower;
+
+                ul.append(li);
+            });
+        });
 
         //Create villains dinamic cards
 
 
-        //Append all Squad data
-        section.append(titleHeroes, secretBaseH, homeTownH, activeH);
-        section2.append(titleVillains, secretBaseV, homeTownV, activeV);
 
 
-        console.log(heroes);
-        console.log(villains);
+
+        //console.log(heroes);
+        //console.log(villains);
     };
 
 };
