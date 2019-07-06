@@ -146,7 +146,7 @@ const completeLoadUI = () => {
 
             image.setAttribute('alt', 'foto_heroe');
             image.setAttribute('src', memberData.image);
-            image.setAttribute('class', 'card-img-top');
+            image.classList.add('card-img-top', 'mt-4');
 
             cardBody.classList.add('card-body');
 
@@ -191,7 +191,7 @@ const completeLoadUI = () => {
 
             image.setAttribute('alt', 'foto_heroe');
             image.setAttribute('src', memberData.image);
-            image.setAttribute('class', 'card-img-top');
+            image.classList.add('card-img-top', 'mt-4');
 
             cardBody.classList.add('card-body');
 
@@ -223,7 +223,6 @@ const completeLoadUI = () => {
         //console.log(heroes);
         //console.log(villains);
     };
-
 };
 
 getHeroes();
