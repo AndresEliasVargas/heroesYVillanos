@@ -6,37 +6,122 @@
 	"active": true,
 	"members": [
 		{
-			"name": "Brainiac",
-			"age": 100000,
-			"secretIdentity": "Will Sooms",
+			"name": "Lex Luthor",
+			"age": 40,
+			"secretIdentity": "Alexander Joseph 'Lex' Luthor",
 			"powers": [
-				"Travels the multiverse",
-				"Techno-organic being",
-				"Extinction of countless planets"
+				"Genius-level intellect",
+				"Expert engineer with exceptional technological prowess",
+				"<b>High-tech warsuit</b>",
+				"Superhuman strength, speed and durability",
+				"Energy projection",
+				"Force fields",
+				"Flight",
+				"Advanced weaponry"
 			],
-			"image":"../imgs/villainIcons/icon1.png"
+			"image":"../imgs/villainIcons/lexLuthor.jpg"
+		},
+		{
+			"name": "Bizarro",
+			"age": 37,
+			"secretIdentity": "El-Kal / Kent Clark",
+			"powers": [
+				"Superhuman strength, hearing, and endurance",
+				"Super-sonic-speed",
+				"Flight",
+				"Healing factor",
+				"Invulnerability",
+				"Freeze, spot-light, x-ray, telescopic, and microscopic vision",
+				"Heat and vacuum breath"
+			],
+			"image":"../imgs/villainIcons/bizarro.jpg"
+		},
+		{
+			"name": "Joker",
+			"age": 45,
+			"secretIdentity": "Unknown, Jack Napier, Jeremiah Valeska, Arthur Fleck",
+			"powers": [
+				"Criminal mastermind",
+				"Expert chemist",
+				"Uses weaponized props and toxins"
+			],
+			"image":"../imgs/villainIcons/joker.jpg"
 		},
 		{
 			"name": "Harley Quinn",
-			"age": 27,
-			"secretIdentity": "Harley Quinn",
+			"age": 23,
+			"secretIdentity": "Harleen Frances Quinzel",
 			"powers": [
-				"Weapons expert",
-				"Damage resistance",
-				"Crazy to the bone"
+				"Expert gymnast",
+				"Immunity to various toxins",
+				"Utilizes weaponized props",
+				"Trained in Psychiatry"
 			],
-			"image":"../imgs/villainIcons/icon2.png"
+			"image":"../imgs/villainIcons/harley.jpg"
 		},
 		{
-			"name": "Sandman",
-			"age": 33,
-			"secretIdentity": "Unknown",
+			"name": "Reverse-Flash / Professor Zoom",
+			"age": 40,
+			"secretIdentity": "Eobard Thawne",
 			"powers": [
-				"Transform to sand",
-				"Controls sand",
-				"Inmortality"
+				"Genius-level intellect",
+				"Skilled hand-to-hand combatant",
+				"<b>Negative Speed Force grants</b>",
+				"Superhuman speed to travel faster than light",
+				"Rapid cellular regeneration",
+				"Time and dimensional travel Intangibility",
+				"Speed mirage creation",
+				"Sonic shockwave projection",
+				"Vortex generation",
+				"Memory and speed absorption",
+				"Age alteration"
 			],
-			"image":"../imgs/villainIcons/icon5.png"
+			"image":"../imgs/villainIcons/reverse.jpg"
+		},
+		{
+			"name": "Sinestro",
+			"age": 45,
+			"secretIdentity": "Thaal Sinestro",
+			"powers": [
+				"Psychological Intuition",
+				"Expert hand-to-hand combatant",
+				"<b>Power ring (typically yellow/green variety)</b>",
+				"Flight",
+				"Superhuman strength",
+				"Hard-light constructs",
+				"<b>Host of Parallax</b>",
+				"Vast superhuman conditioning including Enhanced Strength, Durability, Stamina, Flight, Self-Sustenance",
+				"Enhanced Fear Energy Manipulation Construct Creation",
+				"Higher sense of awareness",
+				"Large scale Space-Time & Reality Manipulation"
+			],
+			"image":"../imgs/villainIcons/sinestro.jpg"
+		},
+		{
+			"name": "Black Manta",
+			"age": 35,
+			"secretIdentity": "David Hyde",
+			"powers": [
+				"Expert engineer and tactician",
+				"Scientifically-enhanced stamina and endurance",
+				"Skilled hand-to-hand combatant and swordsman",
+				"<b>High-tech battle suit</b>",
+				"Superhuman strength and endurance",
+				"Optic blasts",
+				"Built-in weaponry and gadgetry",
+				"Artificial gills for underwater breathing"
+			],
+			"image":"../imgs/villainIcons/black.png"
+		},
+		{
+			"name": "Agamemno",
+			"age": "Since Big Bang",
+			"secretIdentity": "None",
+			"powers": [
+				"Psychic powers",
+				"Intergalactic Travel"
+			],
+			"image":"../imgs/villainIcons/agamemno.jpg"
 		}
 	]
 }
