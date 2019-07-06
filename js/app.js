@@ -84,9 +84,9 @@ const completeLoadUI = () => {
 
         //Creating section
         section.setAttribute('id', 'left');
-        section.classList.add('col-6');
+        section.classList.add('col-md-6', 'my-4');
         section2.setAttribute('id', 'right');
-        section2.classList.add('col-6');
+        section2.classList.add('col-md-6', 'my-4');
 
         //Add sections in document
         main.appendChild(section);
@@ -106,24 +106,24 @@ const completeLoadUI = () => {
         secretBaseH.innerHTML = heroes.secretBase;
         homeTownH.classList.add('text-center');
         homeTownH.innerHTML = '<b>Home Town </b>' + heroes.homeTown;
-        activeH.classList.add('text-center');
+        activeH.classList.add('text-center', 'mb-4');
         activeH.innerHTML = '<b>Active </b>' + heroes.active;
         divRow.classList.add('row');
-        col_3_left.classList.add('col-md-3');
-        divCol.classList.add('col-12', 'col-md-6');
-        col_3_right.classList.add('col-md-3');
+        col_3_left.classList.add('col-md-2');
+        divCol.classList.add('col-12', 'col-md-8');
+        col_3_right.classList.add('col-md-2');
 
         //Create Villains secretBase, homeTown, active
         secretBaseV.classList.add('font-italic', 'text-center');
         secretBaseV.innerHTML = villains.secretBase;
         homeTownV.classList.add('text-center');
         homeTownV.innerHTML = '<b>Home Town </b>' + villains.homeTown;
-        activeV.classList.add('text-center');
+        activeV.classList.add('text-center', 'mb-4');
         activeV.innerHTML = '<b>Active </b>' + heroes.active;
         divRowV.classList.add('row');
-        col_3_leftV.classList.add('col-md-3');
-        divColV.classList.add('col-12', 'col-md-6');
-        col_3_rightV.classList.add('col-md-3');
+        col_3_leftV.classList.add('col-md-2');
+        divColV.classList.add('col-12', 'col-md-8');
+        col_3_rightV.classList.add('col-md-2');
 
         //Append all Squad data
         section.append(titleHeroes, secretBaseH, homeTownH, activeH, divRow);
@@ -142,7 +142,7 @@ const completeLoadUI = () => {
             const liTitle = document.createElement('li');
             //console.log(memberData);
 
-            card.classList.add('card', 'mb-3');
+            card.classList.add('card', 'mb-4');
 
             image.setAttribute('alt', 'foto_heroe');
             image.setAttribute('src', memberData.image);
@@ -187,7 +187,7 @@ const completeLoadUI = () => {
             const liTitle = document.createElement('li');
             //console.log(memberData);
 
-            card.classList.add('card', 'mb-3');
+            card.classList.add('card', 'mb-4');
 
             image.setAttribute('alt', 'foto_heroe');
             image.setAttribute('src', memberData.image);
