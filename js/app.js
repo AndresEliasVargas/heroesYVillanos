@@ -109,9 +109,9 @@ const completeLoadUI = () => {
         activeH.classList.add('text-center', 'mb-4');
         activeH.innerHTML = '<b>Active </b>' + heroes.active;
         divRow.classList.add('row');
-        col_3_left.classList.add('col-md-2');
-        divCol.classList.add('col-12', 'col-md-8');
-        col_3_right.classList.add('col-md-2');
+        col_3_left.classList.add('col-sm-2');
+        divCol.classList.add('col-12', 'col-sm-8');
+        col_3_right.classList.add('col-sm-2');
 
         //Create Villains secretBase, homeTown, active
         secretBaseV.classList.add('font-italic', 'text-center');
@@ -121,9 +121,9 @@ const completeLoadUI = () => {
         activeV.classList.add('text-center', 'mb-4');
         activeV.innerHTML = '<b>Active </b>' + heroes.active;
         divRowV.classList.add('row');
-        col_3_leftV.classList.add('col-md-2');
-        divColV.classList.add('col-12', 'col-md-8');
-        col_3_rightV.classList.add('col-md-2');
+        col_3_leftV.classList.add('col-sm-2');
+        divColV.classList.add('col-12', 'col-sm-8');
+        col_3_rightV.classList.add('col-sm-2');
 
         //Append all Squad data
         section.append(titleHeroes, secretBaseH, homeTownH, activeH, divRow);
@@ -144,9 +144,9 @@ const completeLoadUI = () => {
 
             card.classList.add('card', 'mb-4');
 
-            image.setAttribute('alt', 'foto_heroe');
+            image.setAttribute('alt', 'Foto ' + memberData.name);
             image.setAttribute('src', memberData.image);
-            image.classList.add('card-img-top', 'mt-4');
+            image.classList.add('card-img-top', 'mt-5', 'rounded-lg');
 
             cardBody.classList.add('card-body');
 
@@ -161,6 +161,7 @@ const completeLoadUI = () => {
                                      '</p>';
 
             liTitle.innerHTML = '<strong>Powers</strong>';
+            liTitle.classList.add('mb-2');
 
             divCol.append(card);
             card.append(image, cardBody);
@@ -189,9 +190,9 @@ const completeLoadUI = () => {
 
             card.classList.add('card', 'mb-4');
 
-            image.setAttribute('alt', 'foto_heroe');
+            image.setAttribute('alt', 'Foto ' + memberData.name);
             image.setAttribute('src', memberData.image);
-            image.classList.add('card-img-top', 'mt-4');
+            image.classList.add('card-img-top', 'mt-5', 'rounded-lg');
 
             cardBody.classList.add('card-body');
 
@@ -206,6 +207,7 @@ const completeLoadUI = () => {
                                      '</p>';
 
             liTitle.innerHTML = '<strong>Powers</strong>';
+            liTitle.classList.add('mb-2');
 
             divColV.append(card);
             card.append(image, cardBody);

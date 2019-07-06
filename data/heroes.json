@@ -1,71 +1,162 @@
 {
-	"squadName": "Super Hero Squad",
-	"homeTown": "Metro City",
-	"formed": 2016,
-	"secretBase": "Super tower",
+	"squadName": "Justice League",
+	"homeTown": "Moon",
+	"formed": 1960,
+	"secretBase": "Atalaya",
 	"active": true,
 	"members": [
 		{
-			"name": "Molecule Man",
+			"name": "Superman",
+			"age": 37,
+			"secretIdentity": "Clark Kent / Kal-El",
+			"powers": [
+				"Superhuman strength",
+				"Highly durable body",
+				"Flight",
+				"X-rays via his eyes",
+				"Project beams of heat from his eyes",
+				"Hear sounds that are too faint for a human to hear",
+				"Superhuman breath"
+			],
+			"image": "../imgs/heroeIcons/superman.jpg"
+		},
+		{
+			"name": "Batman",
+			"age": 32,
+			"secretIdentity": "Bruce Wayne",
+			"powers": [
+				"Genius-level intellect",
+				"Expert detective",
+				"Indomitable will",
+				"Peak human condition",
+				"Master martial artist and hand-to-hand combatant",
+				"Utilizes high-tech equipment"
+			],
+			"image": "../imgs/heroeIcons/batman.png"
+		},
+		{
+			"name": "Wonder Woman",
+			"age": 23,
+			"secretIdentity": "Diana Prince",
+			"powers": [
+				"Masterful athlete",
+				"Superhuman strength",
+				"Durability",
+				"Power of flight",
+				"Superhuman speed, reflexes, and agility",
+				"Enhanced senses, including smell, vision, and hearing"
+			],
+			"image": "../imgs/heroeIcons/wonderwoman.png"
+		},
+		{
+			"name": "Flash",
 			"age": 29,
-			"secretIdentity": "Dan Jukes",
+			"secretIdentity": "Barry Allen",
 			"powers": [
-				"Radiation resistance",
-				"Turning tiny",
-				"Radiation blast"
+				"Move, think and react at super-human speeds",
+				"Connection to the Speed Force",
+				"Superhuman levels of stamina, speed, reflexes, agility, endurance and strength",
+				"Intangibility through molecular vibration at high velocity Speed Reading",
+				"Molecular control",
+				"Ability to travel through time and various alternate dimensions",
+				"Creation of vortexes",
+				"Super-charged brain-activity",
+				"Electricity and lightning manipulation",
+				"Accelerated healing factor",
+				"Enhanced perceptions and senses",
+				"Electrokinesis",
+				"Time manipulation",
+				"Able to give/take speed",
+				"Speed-Force aura",
+				"Resistance to telepathy",
+				"Rapid cellular regeneration",
+				"Speed mirage creation",
+				"Sonic shockwave projection",
+				"Memory absorption"
 			],
-			"image": "../imgs/heroeIcons/icon3.png"
+			"image": "../imgs/heroeIcons/flash.jpg"
 		},
 		{
-			"name": "Madame Uppercut",
-			"age": 39,
-			"secretIdentity": "Jane Wilson",
+			"name": "Cyborg",
+			"age": 27,
+			"secretIdentity": "Victor Stone",
 			"powers": [
-				"Million tonne punch",
-				"Damage resistance",
-				"Superhuman reflexes"
+				"Superhuman strength, speed, stamina, endurance and durability",
+				"Advanced sensory systems and scanners",
+				"Inbuilt weaponry, including sonic cannon",
+				"Flight",
+				"Technopathy",
+				"Data Manipulation",
+				"Generation of boom tubes"
 			],
-			"image": "../imgs/heroeIcons/icon4.png"
+			"image": "../imgs/heroeIcons/cyborg.png"
 		},
 		{
-			"name": "Eternal Flame",
-			"age": 1000000,
-			"secretIdentity": "Unknown",
+			"name": "Aquaman",
+			"age": 32,
+			"secretIdentity": "Arthur Curry",
 			"powers": [
+				"Atlantean Hybridized Physiology",
+				"Energy and Heat Resistance",
+				"Superhuman Stamina, senses, reflexes, speed and stregth",
+				"Super-Leaping",
+				"Accelerated Healing",
+				"Magic with Eldritch Blast, Force Field, Magic Resistance, Physical Augmentation",
+				"Life Force Connection",
+				"Marine Telepathy",
+				"Divine Empowerment",
+				"Hand-to-Hand Combat (Advanced)"
+
+			],
+			"image": "../imgs/heroeIcons/aquaman.jpg"
+		},
+		{
+			"name": "Green Lantern",
+			"age": 28,
+			"secretIdentity": "Hal Jordan",
+			"powers": [
+				"Trained aircraft pilot<br/><br/>",
+				"<b>Using the ring</b>",
+				"Uniform (suit and mask)",
+				"Flight",
+				"Force field",
+				"Space travel",
+				"Generation of hard-light constructs",
+				"Real-time translation of all-languages"
+
+			],
+			"image": "../imgs/heroeIcons/greenlantern.png"
+		},
+		{
+			"name": "Captain Marvel / Shazam",
+			"age": 12,
+			"secretIdentity": "William Joseph 'Billy' Batson",
+			"powers": [
+				"<b>Wisdom of Solomon<b/>",
+				"Enhanced intellect",
+				"Nigh Omniscience",
+				"Knowledge and focus of the gods",
+				"<b>Strength of Hercules</<b>",
+				"Superhuman strength",
+				"<b>Stamina of Atlas</<b>",
+				"Superhuman stamina",
+				"Invulnerability",
+				"Superhuman endurance",
+				"<b>Power of Zeus</<b>",
+				"Power over unlimited lightning",
 				"Immortality",
-				"Heat Immunity",
-				"Inferno",
-				"Teleportation",
-				"Interdimensional travel"
+				"Electricity generation and manipulation",
+				"Lightning/Electricity absorption",
+				"Creation of electrical force-fields",
+				"<b>Courage of Achilles</b>",
+				"Superhuman durability",
+				"Indomitable will",
+				"<b>Speed of Mercury</b>",
+				"Superhuman speed",
+				"Flight",
+				"Teleportation via the Rock of Eternity"
 			],
-			"image": "../imgs/heroeIcons/icon7.png"
-		},
-		{
-			"name": "Super Moco",
-			"age": 22,
-			"secretIdentity": "Esteban Padilla",
-			"powers": [
-				"Tirar Moco"
-			],
-			"image": "../imgs/heroeIcons/icon8.png"
-		},
-		{
-			"name": "Super Reflujo",
-			"age": 22,
-			"secretIdentity": "Kaleen",
-			"powers": [
-				"Tirar Flujo"
-			],
-			"image": "../imgs/heroeIcons/icon9.png"
-		},
-		{
-			"name": "Spider Boy",
-			"age": 45,
-			"secretIdentity": "Juan Perez",
-			"powers": [
-				"unknown"
-			],
-			"image": "../imgs/heroeIcons/icon9.png"
+			"image": "../imgs/heroeIcons/shazam.png"
 		}
 	]
 }
